@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+
+    .nav__logo {
+      color: var(--title-color);
+      font-weight: var(--font-bold);
+    }
+
+    .nav__menu {
+      .nav__list {
+        display: flex;
+        column-gap: 2rem;
+
+        .nav__item {
+          .nav__link {
+            font-size: var(--small-font-size);
+            color: var(--title-color);
+            font-weight: var(--font-medium);
+            transition: 0.3s;
+          }
+        }
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+
+    .toggle {
+      background-color: var(--title-color);
+      color: var(--container-color);
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow: 0 0 3px #000;
+      }
+
+      i{
+        animation: toggle 2s ease-in-out infinite;
+
+        @keyframes toggle {
+
+          0%{
+            transform: translateY(0);
+          }
+          30%{
+            transform: translateY(1px);
+          }
+          
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// BREAKPOINTS
+
+// For medium devices
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    top: initial;
+
+    .nav {
+      height: var(--header-height);
+    }
+  }
+}
