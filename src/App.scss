@@ -93,12 +93,11 @@ textPath {
 }
 
 body {
-    background-color: var(--body-color);
     color: var(--text-color);
 }
 
 h1, h2, h3 {
-    color: var(--title-color);
+    // color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
 
@@ -158,7 +157,6 @@ img{
 
 .button{
     display: inline-block;
-    background-color: var(--title-color);
     color: var(--container-color);
     padding: 1.25rem 2rem;
     border-radius: 1rem;

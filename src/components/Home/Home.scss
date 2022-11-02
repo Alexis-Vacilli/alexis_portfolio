@@ -12,7 +12,6 @@
 
       .home__social-icon {
         font-size: 2rem;
-        color: var(--title-color);
 
         &:hover {
           transform: scale(1.05);
@@ -93,7 +92,7 @@
     }
 
     .home__img {
-      background: url(../../assets/me.png);
+      background: url(../../assets/alexis.jpeg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
