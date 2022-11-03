@@ -22,7 +22,7 @@ export const Data = [
         image: Image3,
         name: "Aseme Kifen",
         title: "Solidity Engineer at dcSpark",
-        description: "Alexis was very helpful and fast to respond to my inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Alexis."
+        description: "Alexis was very helpful and fast to respond to my inquiry.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Alexis."
     }
 ]
 
