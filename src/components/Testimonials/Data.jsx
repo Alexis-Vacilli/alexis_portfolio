@@ -17,12 +17,12 @@ export const Data = [
         title: "Senior software developer at Amalitech",
         description: "Alexis is awesome, delivers exactly what you want and is a great guy as well, thanks for all your hard work on my website, was also very helpful when I was building my website, I now have my ecommerce store built from scratch"
     },
-    {
-        id: 3,
-        image: Image3,
-        name: "Aseme Kifen",
-        title: "Solidity Engineer at dcSpark",
-        description: "Alexis was very helpful and fast to respond to my inquiry.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Alexis."
-    }
+    // {
+    //     id: 3,
+    //     image: Image3,
+    //     name: "Aseme Kifen",
+    //     title: "Solidity Engineer at dcSpark",
+    //     description: "Alexis was very helpful and fast to respond to my inquiry.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Alexis."
+    // }
 ]
 
