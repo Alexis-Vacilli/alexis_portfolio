@@ -20,7 +20,7 @@ const Home = () => {
             className="home__content grid"
           >
             <Social />
-            <div className="home__img"> </div>
+            <div className="home__img" style={{filter: theme.filter}}> </div>
             <Data />
           </motion.div>
           <ScrollDown />

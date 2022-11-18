@@ -1,6 +1,7 @@
 import "./App.scss";
 import {
   About,
+  Contact,
   Footer,
   Home,
   Navbar,
@@ -23,6 +24,7 @@ function App() {
           <Services />
           <Testimonials />
           <Portfolio />
+          <Contact />
           <Footer />
         </main>
       </ThemeContextProvider>

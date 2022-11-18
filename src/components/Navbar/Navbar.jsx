@@ -6,7 +6,7 @@ import { TbCircleTriangle } from "react-icons/tb";
 const Navbar = () => {
   const { isLightTheme, light, dark, toggleTheme } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const handleToggle = (e) => {
     setToggle(!toggle);
     toggleTheme();

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import AboutImg from "../../assets/alexis.jpeg";
+import AboutImg from "../../assets/alexis.jpg";
 import Info from "./Info";
 import "./About.scss";
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ const About = () => {
       <div className="section__subtitle">My introduction</div>
       <div className="about__container container grid">
         <div className="about__img">
-          <img src={AboutImg} alt="me" />
+          <img src={AboutImg} alt="me" style={{filter: "grayscale(100%)", opacity: '.6'}}/>
         </div>
         <motion.div
           whileInView={{ y: [50, 0], opacity: [0, 1] }}

@@ -1,6 +1,6 @@
 import Image1 from '../../assets/serge.jpeg';
 import Image2 from '../../assets/blaise.jpeg';
-import Image3 from '../../assets/kifen.jpeg';
+// import Image3 from '../../assets/kifen.jpeg';
 
 export const Data = [
     {
