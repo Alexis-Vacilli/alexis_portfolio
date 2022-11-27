@@ -16,7 +16,7 @@ class ThemeContextProvider extends React.Component {
       buttonTextColor: "#fff",
       border: "1px solid rgba(0, 0, 0, 0.1)",
       filter: "grayscale(100%)",
-      cardBackGround: "rgba(0, 0, 0, .01)"
+      cardBackGround: "rgb(240, 240, 240)"
     },
     dark: {
       titleColor: "rgba(255, 255, 255, .7)",
@@ -28,7 +28,7 @@ class ThemeContextProvider extends React.Component {
       containerColor: "#000",
       textColor: "hsl(0, 0%, 64%)",
       filter: "grayscale(0%)",
-      cardBackGround: "rgba(255, 255, 255, .01)"
+      cardBackGround: "rgb(15, 15, 15)"
     },
   };
 

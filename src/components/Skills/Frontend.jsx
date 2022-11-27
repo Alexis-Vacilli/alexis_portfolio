@@ -27,7 +27,7 @@ const Frontend = () => {
         <div className="skills__box">
           <div className="skills__group">
             <div className="skills__data">
-            <i class="uil uil-java-script"></i>
+            <i className="uil uil-java-script"></i>
               <div>
                 <h3
                   className="skills__name"
@@ -39,7 +39,7 @@ const Frontend = () => {
               </div>
             </div>
             <div className="skills__data">
-            <i class="uil uil-react"></i>
+            <i className="uil uil-react"></i>
               <div>
                 <h3
                   className="skills__name"
@@ -51,7 +51,7 @@ const Frontend = () => {
               </div>
             </div>
             <div className="skills__data">
-            <i class="uil uil-react"></i>
+            <i className="uil uil-react"></i>
               <div>
                 <h3
                   className="skills__name"
@@ -75,7 +75,7 @@ const Frontend = () => {
               </div>
             </div>
             <div className="skills__data">
-            <i class="uil uil-vuejs"></i>
+            <i className="uil uil-vuejs"></i>
               <div>
                 <h3
                   className="skills__name"

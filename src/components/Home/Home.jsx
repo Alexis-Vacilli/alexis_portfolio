@@ -5,11 +5,12 @@ import Social from "./Social";
 import { motion } from "framer-motion";
 import ScrollDown from "./ScrollDown";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import  Contact  from "../../components/Contact/Contact";
+
 
 const Home = () => {
   const {isLightTheme, light, dark} = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
-  console.log(theme)
   return (
     <div>
       <section className="home section" id="home" style={{background: theme.bodyColor}}>
@@ -24,6 +25,7 @@ const Home = () => {
             <Data />
           </motion.div>
           <ScrollDown />
+          <Contact />
         </div>
       </section>
     </div>

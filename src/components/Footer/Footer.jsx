@@ -57,6 +57,7 @@ const Footer = () => {
           >
             <i className="uil uil-linkedin-alt"></i>
           </a>
+          
         </div>
         <span className="footer__copy">&#169; 2022 all rights reserved alexis vacilli</span>
       </div>

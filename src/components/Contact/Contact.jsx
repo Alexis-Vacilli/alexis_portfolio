@@ -1,43 +1,39 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { SiGmail } from "react-icons/si";
-import { BsWhatsapp } from "react-icons/bs";
-import { RiMessengerLine } from "react-icons/ri";
-import './Contact.scss';
-
+import "./Contact.scss";
+import { BiMessageSquareDetail } from "react-icons/bi";
+import { MdClose } from "react-icons/md";
+import Form from "./Form";
 
 const Contact = () => {
+  const handleclick = (e) => {
+    e.preventDefault();
+    setToggleForm(!toggleForm);
+  };
+  const [toggleForm, setToggleForm] = useState(false);
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
   return (
-    <section
-      className="section contact" 
-      id="contact"
-      style={{ background: theme.bodyColor }}
-    >
-      <h2 className="section__title" style={{ color: theme.titleColor }}>
-        Contact us
-      </h2>
-      <span className="section__subtitle">Reach out to us</span>
-
-      <div className="contacts__container container grid">
-        <div className="contact__card" style={{border: theme.border, background: theme.cardBackGround}}>
-          <div><SiGmail className="contact__icon"/></div>
-          <div>Email</div>
-          <a href="aa" style={{color: theme.textColor}}>Send message</a>
-        </div>
-        <div className="contact__card" style={{border: theme.border, background: theme.cardBackGround}}>
-          <div><BsWhatsapp className="contact__icon"/></div>
-          <div>WhatsApp</div>
-          <a href="aa" style={{color: theme.textColor}}>Send message</a>
-        </div>
-        <div className="contact__card" style={{border: theme.border, background: theme.cardBackGround}}>
-          <div><RiMessengerLine className="contact__icon"/></div>
-          <div>Messenger</div>
-          <a href="aa" style={{color: theme.textColor}}>Send message</a>
-        </div>
+    <>
+      {toggleForm && <Form />}
+      <div
+        style={{ backgroundColor: theme.buttonColor }}
+        className="message-btn"
+        onClick={handleclick}
+      >
+        {toggleForm ? (
+          <MdClose
+            className="message-icon"
+            style={{ color: theme.buttonTextColor }}
+          />
+        ) : (
+          <BiMessageSquareDetail
+            className="message-icon"
+            style={{ color: theme.buttonTextColor }}
+          />
+        )}
       </div>
-    </section>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
+
 const About = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
@@ -20,7 +21,11 @@ const About = () => {
       <div className="section__subtitle">My introduction</div>
       <div className="about__container container grid">
         <div className="about__img">
-          <img src={AboutImg} alt="me" style={{filter: "grayscale(100%)", opacity: '.6'}}/>
+          <img
+            src={AboutImg}
+            alt="me"
+            style={{ filter: "grayscale(100%)", opacity: ".6" }}
+          />
         </div>
         <motion.div
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
@@ -29,7 +34,11 @@ const About = () => {
         >
           <Info />
           <p className="about__description">
-            I have extensive experience working both alone and as part of the team on often time-sensitive, challenging web development projects that require outstanding create and technical capabilities and the ability to ensure all work is optimised across a wide range of platforms.
+            I have extensive experience working both alone and as part of the
+            team on often time-sensitive, challenging web development projects
+            that require outstanding create and technical capabilities and the
+            ability to ensure all work is optimised across a wide range of
+            platforms.
           </p>
           <a
             href="j"

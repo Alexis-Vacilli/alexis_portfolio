@@ -32,7 +32,7 @@ const Services = () => {
         >
           <div>
             <i
-              class="uil uil-palette services__icon"
+              className="uil uil-palette services__icon"
               style={{ color: theme.titleColor }}
             ></i>
             <h3 className="services__title" style={{ color: theme.titleColor }}>
@@ -135,7 +135,7 @@ const Services = () => {
         >
           <div>
             <i
-              class="uil uil-brackets-curly services__icon"
+              className="uil uil-brackets-curly services__icon"
               style={{ color: theme.titleColor }}
             ></i>
             <h3 className="services__title" style={{ color: theme.titleColor }}>

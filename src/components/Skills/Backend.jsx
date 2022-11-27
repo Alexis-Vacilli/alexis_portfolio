@@ -18,7 +18,7 @@ const Backend = () => {
         <div className="skills__box">
           <div className="skills__group">
             <div className="skills__data">
-            <i class="uil uil-java-script"></i>
+            <i className="uil uil-java-script"></i>
               <div>
                 <h3 className="skills__name" style={{color: theme.titleColor}}>Nodejs</h3>
                 <span className="skills__level">Advanced</span>
