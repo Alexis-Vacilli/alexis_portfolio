@@ -4,7 +4,7 @@ import i18next from 'i18next'
 import { initReactI18next, useTranslation } from 'react-i18next'
 import HttpApi from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
-// import App from './App'
+import App from './App'
 
 
 
@@ -48,11 +48,11 @@ const loadingMarkup = (
   </div>
 )
 
-function App(){
-  const { t } = useTranslation();
+// function App(){
+//   const { t } = useTranslation();
 
-  return <h2>{t("welcome message")}</h2>
-}
+//   return <h2>{t("welcome message")}</h2>
+// }
 
 
 ReactDOM.render(

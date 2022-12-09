@@ -39,7 +39,7 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <Dropdown />
+        {/* <Dropdown /> */}
         <div
           className="toggle"
           onClick={handleToggle}
