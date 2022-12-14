@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./Navbar.scss";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { TbCircleTriangle } from "react-icons/tb";
-import Dropdown from "../DropdownMenu/Dropdown";
+// import Dropdown from "../DropdownMenu/Dropdown";
 
 const Navbar = () => {
   const { isLightTheme, light, dark, toggleTheme } = useContext(ThemeContext);
