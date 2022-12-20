@@ -41,7 +41,7 @@ const About = () => {
             platforms.
           </p>
           <a
-            href="N. Alex CV.pdf"
+            href="N.Alex CV.pdf"
             className="button button__flex"
             style={{
               backgroundColor: theme.buttonColor,
